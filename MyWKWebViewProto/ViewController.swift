@@ -9,7 +9,7 @@
 import Cocoa
 import WebKit
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, WKUIDelegate {
     var webView: WKWebView?
     
     override func viewDidLoad() {
@@ -18,11 +18,12 @@ class ViewController: NSViewController {
         
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: self.view.bounds, configuration: webConfiguration)
+        webView?.uiDelegate = self
+        view = webView!
         
         // Allows for Web Inspector in WKWebView with ctrl click
         self.webView?.configuration.preferences.setValue(true, forKey: "developerExtrasEnabled")
-        
-        view = webView!
+
         _ = webView?.loadHTMLString(mySVGString(), baseURL: nil)
     }
 

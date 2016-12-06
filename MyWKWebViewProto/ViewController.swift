@@ -9,7 +9,7 @@
 import Cocoa
 import WebKit
 
-class ViewController: NSViewController/*, WKUIDelegate */{
+class ViewController: NSViewController {
     var webView: WKWebView?
     
     override func viewDidLoad() {

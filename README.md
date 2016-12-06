@@ -3,5 +3,5 @@ Uses loadHTMLString to load initial web page, page has few svg element's that ca
 blue, gray, move as single and  orange move all as a group. Ctrl click bring's context menu with menu item Inspect Element.
 That load's Web Inspector, Reload just renders view white don't use it. For some reason debugger gives Window warning when loading Web Inspector when window is resized to max size 800x600, so don't resize to max before loading Web Inspector.
 When window is small Web Inspector open's in own window and when window is at max it's added as subview and the error happens.
-
+Web Inspector is good for reading the html string loaded, in code it's hard as it's as a string.
 Xcode Version 8.2 beta (8C30a).

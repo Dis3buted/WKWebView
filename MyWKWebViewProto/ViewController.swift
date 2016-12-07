@@ -67,7 +67,7 @@ class ViewController: NSViewController, WKUIDelegate {
         "</head>\n\n" +
         "<body style=\"margin:0px; padding:0px;\" >\n" +
         "\t<svg width=\"800\" height=\"600\">\n" +
-        "\t\t<rect width=\"800\" height=\"600\" fill=\"#fcfaef\">\n" + "\t\t</rect>\n" +
+        "\t\t<rect x=\"0\" y=\"0\" width=\"800\" height=\"600\" fill=\"#fcfaef\">\n" + "\t\t</rect>\n" +
         "\t\t\t<g transform=\"translate(0 0)\">\n" +
         "\t\t\t\t<circle id=\"circle1\"" +
             "onmousedown=\"startMove(evt, \'single\')\" onmouseup=\"endMove()\"" +

@@ -9,7 +9,7 @@
 import Cocoa
 import WebKit
 
-class ViewController: NSViewController, WKUIDelegate {
+class ViewController: NSViewController {
     var webView: WKWebView?
     
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class ViewController: NSViewController, WKUIDelegate {
         
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: self.view.bounds, configuration: webConfiguration)
-        webView?.uiDelegate = self
+        webView?.navigationDelegate = self
         view = webView!
         
         // Allows for Web Inspector in WKWebView with ctrl click
@@ -87,3 +87,15 @@ class ViewController: NSViewController, WKUIDelegate {
     }
 }
 
+// To handle context menu Reload
+extension ViewController: WKNavigationDelegate {
+
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        decisionHandler(.allow)
+        
+        if navigationAction.navigationType == WKNavigationType.reload  {
+            webView.loadHTMLString(mySVGString(), baseURL: nil)
+        }
+    }
+}

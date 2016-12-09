@@ -95,6 +95,8 @@ extension ViewController: WKNavigationDelegate {
         decisionHandler(.allow)
         
         if navigationAction.navigationType == WKNavigationType.reload  {
+            // And to ignore Reload uncomment next line
+            //decisionHandler(.cancel)
             webView.loadHTMLString(mySVGString(), baseURL: nil)
         }
     }

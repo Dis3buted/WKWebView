@@ -66,6 +66,15 @@ class ViewController: NSViewController {
         "//]]>\n\n</script>\n" +
         "</head>\n\n" +
         "<body style=\"margin:0px; padding:0px;\" >\n" +
+        "<style> #circle1 { fill: blue; transition: fill 1.0s ease-out; transition: stroke 1.5s ease-in; }" +
+            "#circle1:hover { fill: #f5ec62; stroke: #4eac6c; cursor: -webkit-grab; } " +
+            "#circle1:active { cursor: -webkit-grabbing; } </style>" +
+            "<style> #circle2 { fill: gray; transition: fill .8s ease-in-out; transition: stroke 1.5s ease-out-in; }" +
+            "#circle2:hover { fill: #6dbffe; stroke: #bcc0ff; cursor: -webkit-grab; } " +
+            "#circle2:active { cursor: -webkit-grabbing; } </style>" +
+            "<style> #circle3 { fill: orange; transition: fill .8s ease-out-in; transition: stroke 1.5s ease-in-out;}" +
+            "#circle3:hover { fill: #c31d21; stroke: #ffd3d3; cursor: -webkit-grab;} " +
+            "#circle1:active { cursor: -webkit-grabbing; } </style>" +
         "\t<svg width=\"800\" height=\"600\">\n" +
         "\t\t<rect x=\"0\" y=\"0\" width=\"800\" height=\"600\" fill=\"#fcfaef\">\n" + "\t\t</rect>\n" +
         "\t\t\t<g transform=\"translate(0 0)\">\n" +

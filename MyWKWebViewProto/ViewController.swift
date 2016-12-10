@@ -74,7 +74,7 @@ class ViewController: NSViewController {
             "#circle2:active { cursor: -webkit-grabbing; } </style>" +
             "<style> #circle3 { fill: orange; transition: fill .8s ease-out-in; transition: stroke 1.5s ease-in-out;}" +
             "#circle3:hover { fill: #c31d21; stroke: #ffd3d3; cursor: -webkit-grab;} " +
-            "#circle1:active { cursor: -webkit-grabbing; } </style>" +
+            "#circle3:active { cursor: -webkit-grabbing; } </style>" +
         "\t<svg width=\"800\" height=\"600\">\n" +
         "\t\t<rect x=\"0\" y=\"0\" width=\"800\" height=\"600\" fill=\"#fcfaef\">\n" + "\t\t</rect>\n" +
         "\t\t\t<g transform=\"translate(0 0)\">\n" +

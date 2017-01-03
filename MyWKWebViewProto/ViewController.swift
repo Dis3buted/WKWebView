@@ -32,7 +32,9 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+/* credit for javascript and svg to
+    http://stackoverflow.com/questions/7777010/svg-dragging-for-group
+*/
     func mySVGString() -> String {
         let str = "<!DOCTYPE html>\n" +
         "<html>\n" +
